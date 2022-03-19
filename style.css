@@ -1,16 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,900;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
-.main-header{
+.header{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header-content{
+.footer{
+    background-color: #444444;;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+.footer__list{
+    padding-top: 0.5rem;
+    list-style: none;
+}
+
+.footer__list__elem{
+    width: 25rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer__content__title{
+    border-bottom: 2px solid #e8bf2e;
+}
+
+.footer__content__title__text{
+    padding: 0.5rem 0.5rem 2px 0.5rem;
+    background-color: #e8bf2e;
+}
+
+.header__content{
     padding-top: 0.5rem;
     width: 80%;
     display: flex;
@@ -18,10 +51,11 @@
     align-items: center;
 }
 
-.logo-img:hover{
+.header__logo__img:hover{
     box-shadow: -22px 30px 20px -20px #ccc;
 }
 
-.contact-number{
+.header__content__contact__number{
     padding-bottom: 8rem;
 }
+
