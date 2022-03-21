@@ -7,6 +7,20 @@
     font-family: 'Poppins';
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
 .header{
     display: flex;
     flex-direction: column;
@@ -34,13 +48,13 @@
 
 .header__nav__menu{
     display: flex;
-    list-style: none;
+    gap: 1rem;
     margin: 0 auto;
     color: #fff;
 }
 
 .header__nav__menu__item{
-    padding: 1rem 0.5rem;
+    padding: 1rem 0;
     text-transform: uppercase;
 }
 
@@ -53,9 +67,7 @@
     color: #fff;
     display: flex;
     justify-content: space-around;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto;
     padding: 1rem;
 }
 
@@ -84,9 +96,97 @@
 }
 
 .toggle__bar{
-    background-color: #444444;
+    background-color: #fff;
     height: 4px;
     width: 100%;
     gap: 10rem;
+}
+
+.main__info{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main__info__left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.main__info__list{
+    margin-left: 1rem;
+}
+
+.main__info__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__guide{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main__guide__title{
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.main__guide__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 21px;
+    grid-row-gap: 21px;
+}
+
+.main__guide__content{
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.main__guide__content--border{
+    border-bottom: 2px solid #444444;
+}
+
+.main__guide__photo{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.main__about{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main__about__photo{
+    width: 24rem;
+    height: auto;
+}
+
+.main__about__top{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+
+.main__about__bot{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+
+.main__about__title{
+    font-size: 2.3rem;
 }
 
