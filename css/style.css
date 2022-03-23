@@ -10,6 +10,7 @@
 body{
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 a{
@@ -232,4 +233,3 @@ ul{
     padding-bottom: 1rem;
     font-size: 1.5rem;
 }
-
