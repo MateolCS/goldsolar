@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/login.css">
     <script src="script.js"></script>
     <title>Zaloguj się</title>
 </head>
@@ -44,12 +44,16 @@
     </header>
     <main class="login__main">
         <form class="main__login__form" action="">
-            <label for="username">Nazwa użytkownika lub adres e-mail *</label>
-            <input type="text" id="username" required class="login__form__input">
-            <label for="password">Hasło*</label>
-            <input type="password" id="password" required class="login__form__input">
+            <div class="login__form__login">
+                <label for="username">Nazwa użytkownika lub adres e-mail *</label>
+                <input type="text" id="username" required class="login__form__input">
+            </div>
+            <div class="login__form__passwd">
+                <label for="password">Hasło*</label>
+                <input type="password" id="password" required class="login__form__input">
+            </div>
             <div class="login__form__mngmnt">
-                <button id="submit-form">Zaloguj się</button>
+                <button id="login__form__submit">Zaloguj się</button>
                 <input type="checkbox">
                 <label for="remember-me">Zapamiętaj mnie</label>
             </div>
