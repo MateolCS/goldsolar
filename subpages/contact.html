@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <script src="script.js"></script>
-    <title>Zaloguj się</title>
+    <title>Kontakt</title>
 </head>
 <body>
     <header class="header">
@@ -43,22 +43,42 @@
         </nav>
     </header>
     <main class="main">
-        <form class="main__login__form" action="">
-            <div class="login__form__login">
-                <label for="username">Nazwa użytkownika lub adres e-mail *</label>
-                <input type="text" id="username" required class="login__form__input">
-            </div>
-            <div class="login__form__passwd">
-                <label for="password">Hasło*</label>
-                <input type="password" id="password" required class="login__form__input">
-            </div>
-            <div class="login__form__mngmnt">
-                <button id="login__form__submit">Zaloguj się</button>
-                <input type="checkbox">
-                <label for="remember-me">Zapamiętaj mnie</label>
-            </div>
-            <a class="login__form__lostpasswd" href="#">Nie pamiętasz hasła?</a>
-        </form>
+        <h2 class="main__title">Skontaktuj się z nami</h2>
+        <div class="main__content">
+            <section class="main__content__left">
+                <h3>Dane firmy</h3>
+                <ul class="contact__list">
+                    <li class="contact__list__item">Nazwa: Gold Solar - PL SP. Z.O.O</li>
+                    <li class="contact__list__item">Adres: Poznań, 60-692, Adama Tomaszewskiego 11</li>
+                    <li class="contact__list__item">Numer kontaktowy: 579 555 111, 579 555 222</li>
+                    <li class="contact__list__item">REGON: 38652732000000</li>
+                    <li class="contact__list__item">Numer KRS: 0000849970</li>
+                    <li class="contact__list__item">NIP: 7773362743</li>
+                    <li class="contact__list__item">E-MAIL: kontakt@goldsolar.pl</li>
+                </ul>
+                <h3>Oddział firmy</h3>
+                <div class="left__company__place">
+                    <p>Adres: Koło, 62-600 Poległych 1</p>
+                    <img src="" alt="company-place">
+                </div>
+            </section>
+            <section class="main__content__right">
+                <form action="" class="main__contac__form">
+                    <h4>Dane kontaktowe</h4>
+                    <div class="main__contact__form__identity">
+                        <div class="form__indentity__inline">
+                            <input type="text" placeholder="Imię">
+                            <input type="text" placeholder="Nazwisko">
+                        </div>
+                        <input type="text" placeholder="Email" class="main__contact__form__identity__email">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Treść"></textarea>
+                    <button id="contact__form__submit">Prześlij</button>
+                </form>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.2504593641575!2d18.645378515745623!3d52.20249586746291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471b159b7d508a03%3A0xb1f38106ea6837a1!2zUG9sZWfFgnljaCAxLCA2Mi02MDAgS2_Fgm8!5e0!3m2!1spl!2spl!4v1648194032033!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__content">
