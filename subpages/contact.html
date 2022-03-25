@@ -43,10 +43,10 @@
         </nav>
     </header>
     <main class="main">
-        <h2 class="main__title">Skontaktuj się z nami</h2>
+        <h2 class="main__title">Skontaktuj się z nami już dziś!</h2>
         <div class="main__content">
             <section class="main__content__left">
-                <h3>Dane firmy</h3>
+                <h3 class="company__info">Dane firmy</h3>
                 <ul class="contact__list">
                     <li class="contact__list__item">Nazwa: Gold Solar - PL SP. Z.O.O</li>
                     <li class="contact__list__item">Adres: Poznań, 60-692, Adama Tomaszewskiego 11</li>
@@ -56,23 +56,23 @@
                     <li class="contact__list__item">NIP: 7773362743</li>
                     <li class="contact__list__item">E-MAIL: kontakt@goldsolar.pl</li>
                 </ul>
-                <h3>Oddział firmy</h3>
-                <div class="left__company__place">
+                <h3 class="company__department">Oddział firmy</h3>
+                <div class="company__left__place">
                     <p>Adres: Koło, 62-600 Poległych 1</p>
-                    <img src="" alt="company-place">
+                    <img src="../imgs/place.jpeg" alt="company-place" class="company__place">
                 </div>
             </section>
             <section class="main__content__right">
-                <form action="" class="main__contac__form">
-                    <h4>Dane kontaktowe</h4>
+                <form action="" class="main__contact__form">
+                    <h4 class="contact__form__cdata">Dane kontaktowe</h4>
                     <div class="main__contact__form__identity">
                         <div class="form__indentity__inline">
-                            <input type="text" placeholder="Imię">
-                            <input type="text" placeholder="Nazwisko">
+                            <input id="contact__name" type="text" placeholder="Imię" class="contact__input">
+                            <input id="contact__surname" type="text" placeholder="Nazwisko" class="contact__input">
                         </div>
-                        <input type="text" placeholder="Email" class="main__contact__form__identity__email">
+                        <input id="contact__email" type="text" placeholder="Email" class="main__contact__form__identity__email contact__input">
                     </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Treść"></textarea>
+                    <textarea id="contact__textarea" cols="30" rows="10" placeholder="Treść" class="contact__input"></textarea>
                     <button id="contact__form__submit">Prześlij</button>
                 </form>
 
