@@ -129,6 +129,7 @@ ul{
     align-items: center;
 }
 
+
 .main__content__title{
     font-weight: lighter;
     font-size: 2rem;
@@ -187,4 +188,12 @@ ul{
     font-size: larger;
     font-weight: 600;
     text-align: center;
+}
+
+.main__desc__list{
+    margin-left: 10%;
+}
+
+.main__desc__list__item{
+    list-style: disc;
 }
