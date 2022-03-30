@@ -207,3 +207,7 @@ ul{
 .main__desc__list__item{
     list-style: disc;
 }
+
+.main__content__link{
+    color: #e8bf2e;
+}
