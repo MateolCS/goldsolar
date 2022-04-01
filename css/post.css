@@ -211,3 +211,8 @@ ul{
 .main__content__link{
     color: #e8bf2e;
 }
+
+.main__content__desc__italic{
+    font-style: italic;
+    font-weight: 300;
+}
