@@ -216,3 +216,24 @@ ul{
     font-style: italic;
     font-weight: 300;
 }
+
+/* Img with description styles for some news*/
+
+.main__content__imgbox{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    border: 1px solid #ccc;
+}
+
+.main__contnet__imgbox__txt{
+    text-align: center;
+}
+
+/* For imgs inside text block on post pages*/
+
+.main__content__desc__img{
+    width: 80%;
+    margin: auto;
+}
