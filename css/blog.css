@@ -118,6 +118,7 @@ ul{
     padding: 1rem 3rem;
     margin-bottom: 2rem;
     border-radius: 5px;
+    width: auto;
 }
 
 .main__content__searchbox{
@@ -129,7 +130,7 @@ ul{
 
 .main__content__grid{
     display: grid;
-    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 1rem;
 }
