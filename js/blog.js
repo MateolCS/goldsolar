@@ -4,6 +4,8 @@ const firstPage = document.querySelector('#main__content__page1')
 const secondPage = document.querySelector('#main__content__page2')
 const thirdPage = document.querySelector('#main__content__page3')
 const fourthPage = document.querySelector('#main__content__page4')
+const searchButton = document.querySelector('#search')
+const searchValue = document.querySelector('#search__value')
 let currentPage = 0
 
 const getBlogPosts = async() => {
@@ -15,6 +17,28 @@ const getBlogPosts = async() => {
     handleNexPage()
 
 }
+
+const searchPosts = async() => {
+    const res = await fetch('../data/blogposts.json')
+    const data = await res.json()
+
+    const lookFor = searchValue.value.toLowerCase()
+    const filteredPosts = []
+    if(lookFor === ''){
+        getBlogPosts()
+    }else{
+        for(i = 0; i < data.length; i++){
+            data[i].forEach(post => {
+                if(post.title.toLowerCase().includes(lookFor) || post.description.toLowerCase().includes(lookFor)){
+                    filteredPosts.push(post)
+                }
+            })
+        }
+        displayBlogPosts(filteredPosts)
+    }
+}
+
+searchButton.addEventListener('click', searchPosts)
 
 const createBlogPost = (title, description, link, img) => {
     const blogPost = document.createElement('div')
