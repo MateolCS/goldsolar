@@ -51,7 +51,7 @@ const displayBlogPosts = (blogPosts) => {
     const container = document.querySelector('.main__content__grid')
     container.innerHTML = ''
     blogPosts.forEach(blogPost => {
-        container.appendChild(createBlogPost(blogPost.title, blogPost.description, blogPost.link, blogPost.imgpath))
+        container.appendChild(createBlogPost(blogPost.title, blogPost.description, blogPost.pagepath, blogPost.imgpath))
     })
 }
 
