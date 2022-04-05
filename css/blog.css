@@ -135,8 +135,8 @@ ul{
     padding: 1rem;
 }
 
-.main__content__grid__item{
-    background-color: #ccc;
+.main__content__grid__item__readmore{
+    font-weight: 600;
 }
 
 .main__content__button{
@@ -156,6 +156,8 @@ ul{
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+    border-radius: 5px;
+    font-weight: 500;
 }
 
 .main__content__navigation{

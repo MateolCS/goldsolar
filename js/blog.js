@@ -19,7 +19,13 @@ const getBlogPosts = async() => {
 const createBlogPost = (title, description, link, img) => {
     const blogPost = document.createElement('div')
     blogPost.classList.add('main__content__grid__item')
-    blogPost.style.backgroundImage = `url(${img})`
+    blogPost.style.backgroundImage = `linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(${img})`
+    blogPost.style.backgroundRepeat = 'no-repeat'
+    blogPost.style.backgroundSize = 'cover'
 
     const blogPostTitle = document.createElement('a')
     blogPostTitle.textContent = title
@@ -31,6 +37,7 @@ const createBlogPost = (title, description, link, img) => {
 
     const readMore = document.createElement('a')
     readMore.textContent = 'Read More'
+    readMore.classList.add('main__content__grid__item__readmore')
     readMore.href = link
 
     blogPost.appendChild(blogPostTitle)
@@ -44,7 +51,7 @@ const displayBlogPosts = (blogPosts) => {
     const container = document.querySelector('.main__content__grid')
     container.innerHTML = ''
     blogPosts.forEach(blogPost => {
-        container.appendChild(createBlogPost(blogPost.title, blogPost.description, blogPost.link, blogPost.img))
+        container.appendChild(createBlogPost(blogPost.title, blogPost.description, blogPost.link, blogPost.imgpath))
     })
 }
 
@@ -80,6 +87,26 @@ prevPage.addEventListener('click', () => {
 
 secondPage.addEventListener('click', () => {
     currentPage = 1
+    getBlogPosts()
+})
+
+firstPage.addEventListener('click', () => {
+    currentPage = 0
+    getBlogPosts()
+})
+
+secondPage.addEventListener('click', () => {
+    currentPage = 1
+    getBlogPosts()
+})
+
+thirdPage.addEventListener('click', () => {
+    currentPage = 2
+    getBlogPosts()
+})
+
+fourthPage.addEventListener('click', () => {
+    currentPage = 3
     getBlogPosts()
 })
 
