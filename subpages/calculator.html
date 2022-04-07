@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/calculator.css">
+    <script src="script.js"></script>
+    <title>Kalkulator</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__content__logo">
+                <img class="header__content__logo__img" src="../imgs/logo.png" alt="gold-solar-logo">
+            </div>
+            <div class="header__content__contact">
+                <h4 class="header__content__contact__number">Numer kontaktowy: 579 555 111 ; 579 555 222</h4>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav__menu">
+                <li class="header__nav__menu__item">
+                    <a href="#" class="toggle__button">
+                        <span class="toggle__bar"></span>
+                        <span class="toggle__bar"></span>
+                        <span class="toggle__bar"></span>
+                    </a>
+                </li>
+                <li class="header__nav__menu__item active"><a href="./index.html">Strona główna</a></li>
+                <li class="header__nav__menu__item"><a href="./news.html">Aktualności</a></li>
+                <li class="header__nav__menu__item"><a href="./subpages/knownedgebase.html">Baza wiedzy</a></li>
+                <li class="header__nav__menu__item"><a href="#">Instalacje</a></li>
+                <li class="header__nav__menu__item"><a href="./ourservices.html">Nasze oferty</a></li>
+                <li class="header__nav__menu__item"><a href="./subpages/aboutus.html">O nas</a></li>
+                <li class="header__nav__menu__item"><a href="./calculator.html">Kalkulator</a></li>
+                <li class="header__nav__menu__item"><a href="./subpages/ourrealisations.html">Nasze realizacje</a></li>
+                <li class="header__nav__menu__item"><a href="./subpages/contact.html">Kontakt</a></li>
+                <li class="header__nav__menu__item"><a href="#">Rejestracja</a></li>
+                <li class="header__nav__menu__item"><a href="./blog.html">Wpisy blogowe</a></li>
+                <li class="header__nav__menu__item"><a href="./subpages/login.html">Zaloguj się!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="main__step">
+            <h2 class="main__step__title">Krok 1 z 4</h2>
+            <h3 class="main__step__subtitle">Twój rachunek za prąd</h3>
+            <div class="main__step__container">
+                <div class="main__step__container__customer">
+                    <p>Klient</p>
+                    <div class="main__step__container__customer__inputs">
+                        <label for="private">Indywialny</label>
+                        <input type="radio" name="customer" id="private" value = "private">
+                        <label for="company">Firma</label>
+                        <input type="radio" name="customer" id="company" value = "company">
+                    </div>
+                </div>
+                <div class="main__step__calculator">
+                    <p>Rocznie płacę</p>
+                    <div class="main__step__calculator__calc">
+                        <input type="range" name="cash" id="get-cash">
+                        <p class="main__step__calculator__calc__info"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__step__button__container">
+                <button id="prev-page" class="main__step__button">Wstecz</button>
+                <button id="next-page" class="main__step__button">Dalej</button>
+            </div>
+        </section>
+        <section class="main__step">
+            <h2 class="main__step__title">Krok 2 z 4</h2>
+            <h3 class="main__step__subtitle">Podaj parametry dachu</h3>
+            <div class="main__step__container">
+                <div class="main__step__container__list">
+                    <label for="sun-position">Pozycja względem słońca</label>
+                    <select id="sun-position" class="main__container__list__select">
+                        <option value="east">Wschód</option>
+                        <option value="west">Zachód</option>
+                        <option value="south">Południe</option>
+                        <option value="south-east">Południowy wschód</option>
+                        <option value="south-west">Południowy zachód</option>
+                    </select>
+                </div>
+                <div class="main__step__container__list">
+                    <label for="sun-position">Pozycja względem słońca</label>
+                    <select id="sun-position" class="main__container__list__select">
+                        <option value="east">Wschód</option>
+                        <option value="west">Zachód</option>
+                        <option value="south">Południe</option>
+                        <option value="south-east">Południowy wschód</option>
+                        <option value="south-west">Południowy zachód</option>
+                    </select>
+                </div>
+                <div class="main__step__container__list">
+                    <label for="sun-position">Pozycja względem słońca</label>
+                    <select id="sun-position" class="main__container__list__select">
+                        <option value="east">Wschód</option>
+                        <option value="west">Zachód</option>
+                        <option value="south">Południe</option>
+                        <option value="south-east">Południowy wschód</option>
+                        <option value="south-west">Południowy zachód</option>
+                    </select>
+                </div>
+            </div>
+            <div class="main__step__button__container">
+                <button id="prev-page" class="main__step__button">Wstecz</button>
+                <button id="next-page" class="main__step__button">Dalej</button>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content__title">
+                <span class="footer__content__title__text">Zamówienia</span>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__list__elem">Regulamin</li>
+                <li class="footer__list__elem">Koszty i sposoby dostawy</li>
+                <li class="footer__list__elem">Sposoby płatności</li>
+                <li class="footer__list__elem">Prawo odstąpienia od umowy</li>
+            </ul>
+        </div>
+        <div class="footer__content">
+            <div class="footer__content__title">
+                <span class="footer__content__title__text">Informacje</span>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__list__elem">O firmie</li>
+                <li class="footer__list__elem">Kontakt</li>
+                <li class="footer__list__elem">Polityka prywatności</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
