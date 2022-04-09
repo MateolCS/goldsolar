@@ -50,26 +50,31 @@
                 <div class="main__step__container__customer">
                     <p>Klient</p>
                     <div class="main__step__container__customer__inputs">
-                        <label for="private">Indywialny</label>
-                        <input type="radio" name="customer" id="private" value = "private">
-                        <label for="company">Firma</label>
-                        <input type="radio" name="customer" id="company" value = "company">
+                        <label>
+                            <input type="radio" name="customer" id="private" value = "private">
+                            Indywialny
+                        </label>
+                        <label>
+                            <input type="radio" name="customer" id="company" value = "company">
+                            Firma
+                        </label>
                     </div>
                 </div>
                 <div class="main__step__calculator">
-                    <p>Rocznie płacę</p>
+                    <p class="main__step__calculator__desc">Rocznie płacę</p>
                     <div class="main__step__calculator__calc">
-                        <input type="range" name="cash" id="get-cash">
+                        <input type="range" name="cash" id="get-cash" class="main__step__calculator__input">
                         <p class="main__step__calculator__calc__info"></p>
                     </div>
                 </div>
+                <div class="main__step__button__container">
+                    <button id="prev-page" class="main__step__button">Wstecz</button>
+                    <button id="next-page" class="main__step__button">Dalej</button>
+                </div>
             </div>
-            <div class="main__step__button__container">
-                <button id="prev-page" class="main__step__button">Wstecz</button>
-                <button id="next-page" class="main__step__button">Dalej</button>
-            </div>
+            
         </section>
-        <section class="main__step">
+        <section class="main__step main--step--hidden">
             <h2 class="main__step__title">Krok 2 z 4</h2>
             <h3 class="main__step__subtitle">Podaj parametry dachu</h3>
             <div class="main__step__container">
@@ -105,14 +110,14 @@
                         <option value="papa">Papa</option>
                     </select>
                 </div>
-            </div>
-            <div class="main__step__button__container">
-                <button id="prev-page" class="main__step__button">Wstecz</button>
-                <button id="next-page" class="main__step__button">Dalej</button>
+                <div class="main__step__button__container">
+                    <button id="prev-page" class="main__step__button">Wstecz</button>
+                    <button id="next-page" class="main__step__button">Dalej</button>
+                </div>
             </div>
         </section>
 
-        <section class="main__step">
+        <section class="main__step main--step--hidden">
             <h2 class="main__step__title">Krok 3 z 4</h2>
             <h3 class="main__step__subtitle">Szczegóły oferty</h3>
             <div class="main__step__container">
@@ -120,90 +125,86 @@
                     <p class="main__step__container__txtblock__desc">
                         Wartość inwestycji:
                     </p>
-                    <p id="inv-value-output">
-
-                    </p>
+                    <p id="inv-value-output"></p>
                 </div>
                 <div class="main__step__container__txtblock">
                     <p class="main__step__container__txtblock__desc">
                         Dotacja:
                     </p>
-                    <p id="inv-dotation-output">
-
-                    </p>
+                    <p id="inv-dotation-output"></p>
                 </div>
                 <div class="main__step__container__txtblock">
                     <p class="main__step__container__txtblock__desc">
                         Zwrot podatki:
                     </p>
-                    <p id="inv-taxrefund-output">
-
-                    </p>
+                    <p id="inv-taxrefund-output"></p>
                 </div>
                 <div class="main__step__container__txtblock">
                     <p class="main__step__container__txtblock__desc">
                         Prezent od Goldsolar:
                     </p>
-                    <p id="inv-ourgift-output">
-
-                    </p>
+                    <p id="inv-ourgift-output"></p>
                 </div>
                 <div class="main__step__container__txtblock">
                     <p class="main__step__container__txtblock__desc">
                         Całkowity koszt po dotacjach i ulgach:
                     </p>
-                    <p id="inv-fullcost-output">
-
-                    </p>
+                    <p id="inv-fullcost-output"></p>
                 </div>
                 <div class="main__step__container__txtblock">
                     <p class="main__step__container__txtblock__desc">
                         Zwrot inwestycji:
                     </p>
-                    <p id="inv-fullcost-output">
-
-                    </p>
+                    <p id="inv-fullcost-output"></p>
                 </div>
                 <div class="main__step__container__txtblock">
                     <p class="main__step__container__txtblock__desc">
                         Zaoszczędzisz na prądzie przez 25 lat:
                     </p>
-                    <p id="inv-yoursavings-output">
-
-                    </p>
+                    <p id="inv-yoursavings-output"></p>
                 </div>
-            </div>
-            <div class="main__step__button__container">
-                <button id="prev-page" class="main__step__button">Wstecz</button>
-                <button id="next-page" class="main__step__button">Dalej</button>
+                <div class="main__step__button__container">
+                    <button id="prev-page" class="main__step__button">Wstecz</button>
+                    <button id="next-page" class="main__step__button">Dalej</button>
+                </div>
             </div>
         </section>
 
-        <section class="main__step">
+        <section class="main__step main--step--hidden">
             <h2 class="main__step__title">Krok 4 z 4</h2>
             <h3 class="main__step__subtitle">Wysyłka oferty</h3>
-            <div class="main__step__container">
-                <div class="main__step__container__customer">
-                    <p>Klient</p>
-                    <div class="main__step__container__customer__inputs">
-                        <label for="private">Indywialny</label>
-                        <input type="radio" name="customer" id="private" value = "private">
-                        <label for="company">Firma</label>
-                        <input type="radio" name="customer" id="company" value = "company">
+            <form class="main__step__form">
+                <div class="main__step__form__inputs">
+                    <div class="main__step__form__inputs__grp">
+                        <label class="main__step__form__label" for="name">Imię:</label>
+                        <input class="main__step__form__input" type="text" name="name" id="name">
+                    </div>
+                    <div class="main__step__form__inputs__grp">
+                        <label class="main__step__form__label" for="phone">Telefon:</label>
+                        <input class="main__step__form__input" type="tel" name="phone" id="phone">
+                    </div>
+                    <div class="main__step__form__inputs__grp">
+                        <label class="main__step__form__label" for="email">E-mail:</label>
+                        <input class="main__step__form__input" type="email" name="email" id="email">
                     </div>
                 </div>
-                <div class="main__step__calculator">
-                    <p>Rocznie płacę</p>
-                    <div class="main__step__calculator__calc">
-                        <input type="range" name="cash" id="get-cash">
-                        <p class="main__step__calculator__calc__info"></p>
-                    </div>
+                <div class="main__step__form__info">
+                    
+                    <label for="consent"> 
+                        <input type="checkbox" id="consent">
+                        Wyrażam zgodę na przetwarzanie i przekazywanie moich danych osobowych zgodnie z Ustawą o ochronie danych osobowych z dnia 29 sierpnia 1997 roku (Dz. U. Nr 133, pozycja 883).
+                    </label>
+                    
+                    <label for="personal-info"> 
+                        <input type="checkbox" id="personal-info">
+                        Wyrażam zgodę na przetwarzanie moich danych osobowych przez Goldsolar w celu realizacji współpracy określonej w Regulaminie przez Spółkę lub współpracujących z nią partnerów biznesowych. Administratorem Danych Osobowych jest Goldsolar. Jestem świadomy(a) przysługującego mi prawa dostępu do treści moich danych, możliwości ich poprawiania oraz tego, że moja zgoda może być odwołana w każdym czasie, co skutkować będzie usunięciem moich danych.
+                    </label>
                 </div>
-            </div>
-            <div class="main__step__button__container">
-                <button id="prev-page" class="main__step__button">Wstecz</button>
-                <button id="next-page" class="main__step__button">Dalej</button>
-            </div>
+                <div class="main__step__button__container">
+                    <button id="prev-page" class="main__step__button">Wstecz</button>
+                    <button id="next-page" class="main__step__button">Dalej</button>
+                </div>
+            </form>
         </section>
         
     </main>
