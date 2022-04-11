@@ -138,6 +138,21 @@ ul{
     font-size: 1.1rem;
 }
 
+.main__form__captcha{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: #ccc solid 2px;
+    background-color: #e9ecef;
+    padding: 1rem 0;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.main__form__captcha__img{
+    width: 50px;
+}
+
 @media(max-width: 768px){
    .footer{
          flex-direction: column;
@@ -166,5 +181,13 @@ ul{
 
    .main__step__form__label{
        width: 100%;
+   }
+
+   .main__form__captcha{
+        width: 100%;
+   }
+
+   .main__form__button__container{
+       justify-content: center;
    }
 }
