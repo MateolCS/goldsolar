@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/register.css">
-    <script src="script.js"></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/register.js" defer></script>
     <title>Zarejestruj się</title>
 </head>
 <body>
@@ -45,7 +46,7 @@
     <main class="main">
         <form class="main__register__form">
             <label for="email-input">Email</label>
-            <input class="main__register__form__input" type="text" id="email-input" required>
+            <input class="main__register__form__input" type="text" id="u-email" required>
             <label for="eusername">Nazwa uzytkownika</label>
             <input class="main__register__form__input" type="text" id="username" required>
             <label for="u-name">Imię</label>
@@ -62,7 +63,7 @@
             </label>
             <div class="main__form__captcha">
                 <label>
-                    <input type="checkbox">
+                    <input id="captcha" type="checkbox">
                     <span>I'm not a robot</span>
                 </label>
                 <img class="main__form__captcha__img" src="../imgs/blogposts/captcha.png" alt="recaptcha">
