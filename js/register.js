@@ -1,11 +1,11 @@
 const submitForm = document.querySelector('#submit-form');
 
 submitForm.addEventListener('click', (e) => {
+    e.preventDefault()
     const checkbox = document.querySelector('#captcha');
     const userPassword = document.querySelector('#u-password').value
     const userPasswordConfirm = document.querySelector('#u-password-confirm').value
     if(!captcha.checked){
-        e.preventDefault();
         alert('Please check the captcha');
     }
     if(!passwordConfirmation(userPassword, userPasswordConfirm)){
@@ -14,15 +14,25 @@ submitForm.addEventListener('click', (e) => {
         userPassword.value = ''
         userPasswordConfirm.value = ''
     }
+
+    getValues()
 })
 
 
 const getValues = () => {
-    const userEmail = document.querySelector('u-email').value
+    const userEmail = document.querySelector('#u-email').value
     const userName = document.querySelector('#username').value
     const userSurname = document.querySelector('#u-surname').value
     const userPassword = document.querySelector('#u-password').value
-    const userPasswordConfirm = document.querySelector('#u-password-confirm').value
+
+    const userData = {
+        email: userEmail,
+        name: userName,
+        surname: userSurname,
+        password: userPassword,
+    }
+
+    return userData
 
 }
 
