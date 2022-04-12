@@ -64,7 +64,7 @@
                 <div class="main__step__calculator">
                     <p class="main__step__calculator__desc">Rocznie płacę</p>
                     <div class="main__step__calculator__calc">
-                        <input type="range" name="cash" id="get-cash" class="main__step__calculator__input">
+                        <input type="range" name="cash" id="get-cash" class="main__step__calculator__input" min="0" max="7200" step="12">
                         <p class="main__step__calculator__calc__info"></p>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                     <p class="main__step__container__txtblock__desc">
                         Zwrot inwestycji:
                     </p>
-                    <p id="inv-fullcost-output"></p>
+                    <p id="inv-refund-output"></p>
                 </div>
                 <div class="main__step__container__txtblock">
                     <p class="main__step__container__txtblock__desc">
@@ -177,15 +177,15 @@
                 <div class="main__step__form__inputs">
                     <div class="main__step__form__inputs__grp">
                         <label class="main__step__form__label" for="name">Imię:</label>
-                        <input class="main__step__form__input" type="text" name="name" id="name">
+                        <input class="main__step__form__input" type="text" name="name" id="u-name">
                     </div>
                     <div class="main__step__form__inputs__grp">
                         <label class="main__step__form__label" for="phone">Telefon:</label>
-                        <input class="main__step__form__input" type="tel" name="phone" id="phone">
+                        <input class="main__step__form__input" type="tel" name="phone" id="u-phone">
                     </div>
                     <div class="main__step__form__inputs__grp">
                         <label class="main__step__form__label" for="email">E-mail:</label>
-                        <input class="main__step__form__input" type="email" name="email" id="email">
+                        <input class="main__step__form__input" type="email" name="email" id="u-email">
                     </div>
                 </div>
                 <div class="main__step__form__info">
