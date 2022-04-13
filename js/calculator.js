@@ -1,3 +1,5 @@
+const steps = [...document.querySelectorAll('.main__step')]
+
 const pageController = (() =>{
     let currentStep = 0
     const handleFirstStep = () => {
@@ -57,8 +59,62 @@ const pageController = (() =>{
     const decreaseStep = () => {
         currentStep--
     }
+
+    const getCurrentStep = () => {
+        return currentStep
+    }
     
-    return {handleFirstStep, decreaseStep, increaseStep, handleThirdStep}
+    return {handleFirstStep, decreaseStep, increaseStep, getCurrentStep, handleThirdStep, handleFourthStep}
 })()
 
-pageController.handleFirstStep()
+window.onload = pageController.handleFirstStep()
+
+const stepOneNextPage = document.querySelector('#next-page-step1')
+
+stepOneNextPage.addEventListener('click', () => {
+    pageController.increaseStep()
+    steps[pageController.getCurrentStep()].classList.remove('main--step--hidden')
+    steps[pageController.getCurrentStep()-1].classList.add('main--step--hidden')
+})
+
+const stepTwoNextPage = document.querySelector('#next-page-step2')
+
+stepTwoNextPage.addEventListener('click', () => {
+    pageController.increaseStep()
+    steps[pageController.getCurrentStep()].classList.remove('main--step--hidden')
+    steps[pageController.getCurrentStep()-1].classList.add('main--step--hidden')
+})
+const stepTwoPrevPage = document.querySelector('#prev-page-step2')
+
+stepTwoPrevPage.addEventListener('click', () => {
+    pageController.decreaseStep()
+    steps[pageController.getCurrentStep()].classList.remove('main--step--hidden')
+    steps[pageController.getCurrentStep()+1].classList.add('main--step--hidden')
+})
+const stepThreeNextPage = document.querySelector('#next-page-step3')
+
+stepThreeNextPage.addEventListener('click', () => {
+    pageController.increaseStep()
+    steps[pageController.getCurrentStep()].classList.remove('main--step--hidden')
+    steps[pageController.getCurrentStep()-1].classList.add('main--step--hidden')
+})
+
+const stepThreePrevPage = document.querySelector('#prev-page-step3')
+
+stepThreePrevPage.addEventListener('click', () => {
+    pageController.decreaseStep()
+    steps[pageController.getCurrentStep()].classList.remove('main--step--hidden')
+    steps[pageController.getCurrentStep()+1].classList.add('main--step--hidden')
+})
+const stepFourNextPage = document.querySelector('#next-page-step4')
+
+
+stepFourNextPage.addEventListener('click', () => {
+
+    const consent = document.querySelector('#consent')
+    const personalInfo = document.querySelector('#personal-info')
+
+    if(!consent.checked || !personalInfo){
+        alert('Please fill in all the required fields')
+    }
+})

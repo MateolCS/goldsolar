@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,900;1,700&display=swap');
+
+/* Global styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Header styles*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 20%;
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__content__contact{
+    display: flex;
+    align-items: center;
+}
+
+.header__content__logo__img:hover{
+    box-shadow: -22px 30px 20px -20px #ccc;
+}
+
+.header__nav{
+    display: flex;
+    background-color: #444444;
+}
+
+.header__nav__menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.header__nav__menu__item{
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+
+.header__nav__menu__item:hover{
+    background-color: #e8bf2e;
+}
+
+/* Footer styles*/
+
+.footer{
+    background-color: #444444;;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    padding: 1rem;
+    min-height: 20%;
+}
+
+.footer__list{
+    padding-top: 0.5rem;
+    list-style: none;
+}
+
+.footer__list__elem{
+    width: 25rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.footer__content__title{
+    border-bottom: 2px solid #e8bf2e;
+}
+
+.footer__content__title__text{
+    padding: 0.5rem 0.5rem 2px 0.5rem;
+    background-color: #e8bf2e;
+}
+
+/* Main styles*/
+
+.main{
+    min-height: 60vh;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.main__title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.main__content{
+    display: flex;
+    gap: 2rem;
+}
+
+@media(max-width: 768px){
+    .footer{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 3rem;
+          margin-top: 1rem;
+    }
+ 
+    .header__content{
+         flex-direction: column;
+         gap: 1rem;
+         justify-content: center;
+         align-items: center;
+    }
+ 
+    .main__step__container__txtblock{
+         flex-direction: column;
+         gap: 1rem;
+    }
+ 
+    .main__step__form__inputs__grp{
+         flex-direction: column;
+         gap: 1rem;
+    }
+ 
+    .main__step__form__label{
+        width: 100%;
+    }
+ }
+

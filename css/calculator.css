@@ -239,6 +239,10 @@ ul{
     display: none;
 }
 
+.main--step--padd{
+    margin-bottom: 4rem;
+}
+
 @media(max-width: 768px){
    .footer{
          flex-direction: column;
