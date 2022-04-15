@@ -158,6 +158,138 @@ ul{
     text-align: center;
 }
 
+.main__animated__grid__item__desc{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.main__financial__support{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.main__financial__support__header{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__financial__support__header__title{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.main__financial__support__header__img{
+    height: 80px;
+}
+
+.main__financial__support__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__financial__support__content__txt{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main__financial__support__content__img{
+    max-height: 20rem;
+    width: auto;
+}
+
+.main__ouroffer{
+    padding-top: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.main__ouroffer__griditem__titlearea__img{
+    width: 80px;
+}
+
+.main__ouroffer__griditem__titlearea{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.main__ouroffer__griditem__title{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.main__invrefund{
+    padding-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main__invrefund__textcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main__invrefund__texcontent__title{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.main__invrefund__texcontent__subtitle{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.main__invrefund__textcontent__info{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.main__invrefund__img{
+    max-height: 20rem;
+    width: auto;
+}
+
+.main__big__img{
+    padding: 2rem 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main__big__img__img{
+    width: 100%;
+}
+
+.main__checkprices{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.7rem;
+    padding-bottom: 3rem;
+}
+
+.main__checkprices__text{
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.main__checkprices__check{
+    font-size: 1.5rem;
+    background-color: #444444;
+    color: #fff;
+    padding: .5rem 4rem;
+    border-radius: 5px;
+}
 
 @media(max-width: 768px){
     .footer{
@@ -187,6 +319,34 @@ ul{
  
     .main__step__form__label{
         width: 100%;
+    }
+
+    .main__financial__support{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .main__financial__support__content{
+        flex-direction: column;
+    }
+
+    .main__ouroffer{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .main__invrefund{
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .main__animated__grid{
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
  }
 
