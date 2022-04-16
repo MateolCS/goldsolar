@@ -146,3 +146,67 @@ ul{
     border-radius: 5px;
     margin-right: 2rem;
 }
+
+@media(max-width: 768px){
+    .footer{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .footer__list__elem{
+        width: 100%;
+    }
+
+    .footer__content{
+        width: 100%;
+    }
+
+    .header__nav__menu{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header__nav__menu__item{
+        width: 100%;
+        text-align: center;
+    }
+ 
+    .header__content{
+         flex-direction: column;
+         gap: 1rem;
+         justify-content: center;
+         align-items: center;
+    }
+
+    .main__login__form{
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .main{
+        padding: 1rem;
+    }
+
+    .login__form__mngmnt{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #login__form__submit{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .login__form__lostpasswd{
+        text-align: center;
+    }
+ }

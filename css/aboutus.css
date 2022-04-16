@@ -132,3 +132,44 @@ ul{
     width: 50%;
 }
 
+@media(max-width: 768px){
+    .footer{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .footer__list__elem{
+        width: 100%;
+    }
+
+    .footer__content{
+        width: 100%;
+    }
+ 
+    .header__content{
+         flex-direction: column;
+         gap: 1rem;
+         justify-content: center;
+         align-items: center;
+    }
+
+    .main__content{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .main__content__img{
+        width: 100%;
+    }
+
+    .main{
+        width: 100%;
+    }
+ }
+

@@ -202,12 +202,21 @@ iframe{
 
 @media(max-width: 768px){
     .footer{
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 3rem;
-          margin-top: 1rem;
-          padding-bottom: 10rem;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    .footer__list__elem{
+        width: 100%;
+    }
+
+    .footer__content{
+        width: 100%;
     }
  
     .header__content{
