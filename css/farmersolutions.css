@@ -164,39 +164,79 @@ ul{
 }
 
 .main__financial__support{
+    padding-top: 2rem;
     width: 90%;
     margin: 0 auto;
 }
 
-.main__financial__support__title{
-    font-size: 3rem;
-    text-align: center;
+.main__financial__support__header{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.main__financial__support__header__title{
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .main__financial__support__content{
-    padding-top: 2rem;
     display: flex;
-    gap: 2rem;
-    width: 100%;
+    gap: 4rem;
 }
 
-.main__financial__support__content__left{
-    width: 50%;
+.main__financial__support__content__text{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main__financial__support__content__img{
+    max-height: 25rem;
+    width: auto;
+}
+
+.main__tax{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main__tax__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.main__tax__header__title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.main__tax__content{
+    display: flex;
+    gap: 4rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main__tax__content__text{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 50%;
 }
 
-.main__financial__support__content__right{
-    width: 50%;
+.main__tax__content__imgbox{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
-.main__financial__support__content__right__img{
-    width: 100%;
+.main__tax__content__imgbox__img{
+    max-width: 25rem;
 }
 
 .main__invrefund{
@@ -213,12 +253,12 @@ ul{
 .main__invrefund__header__title{
     font-size: 2rem;
     font-weight: 600;
-    padding-bottom: 2rem;
 }
 
 .main__invrefund__content__title{
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 600;
+    padding-bottom: 2rem;
 }
 
 .main__invrefund__content{
@@ -228,7 +268,7 @@ ul{
 }
 
 .main__invrefund__content__img{
-    width: 30rem;
+    max-height: 25rem;
 }
 
 .main__invrefund__content__text{
@@ -236,14 +276,6 @@ ul{
     flex-direction: column;
     gap: 2rem;
     width: 50%;
-}
-
-.main__checkprices__check{
-    font-size: 1.5rem;
-    background-color: #444444;
-    color: #fff;
-    padding: .5rem 4rem;
-    border-radius: 5px;
 }
 
 .main__checkprices{
@@ -289,28 +321,45 @@ ul{
         gap: 2rem;
     }
 
+    .main__financial__support{
+        width: 100%;
+    }
+
     .main__financial__support__content{
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .main__tax{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .main__tax__content__text{
+        width: 100%;
+    }
+
+    .main__tax__content{
+        width: 100%;
         flex-direction: column;
     }
 
-    .main__financial__support__content__left{
-        width: 100%;
-    }
-
-    .main__financial__support__content__right{
-        width: 100%;
-    }
-
-    .main__financial__support__content__right__img{
+    .main__tax__content__text{
         width: 100%;
     }
 
     .main__invrefund{
-        padding-top: 3rem;
+        width: 100%;
+        padding: 1rem;
     }
 
     .main__invrefund__content{
+        width: 100%;
         flex-direction: column;
+    }
+
+    .main__invrefund__content__title{
+        padding: 1rem 0;
     }
 
     .main__invrefund__content__text{
@@ -318,7 +367,7 @@ ul{
     }
 
     .main__invrefund__content__img{
-        width: 100%;
+        max-width: 90%;
     }
  }
 
