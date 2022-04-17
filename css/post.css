@@ -248,6 +248,7 @@ ul{
         gap: 3rem;
         margin-top: 1rem;
         font-size: 1rem;
+        padding-bottom: 12rem;
     }
 
     .footer__list__elem{
